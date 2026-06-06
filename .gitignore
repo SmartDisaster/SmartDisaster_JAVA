@@ -1,0 +1,45 @@
+# ===== Maven =====
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# ===== IntelliJ IDEA =====
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# ===== Eclipse =====
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# ===== VS Code =====
+.vscode/
+
+# ===== Spring Boot =====
+spring-shell.log
+
+# ===== Logs =====
+*.log
+logs/
+
+# ===== Arquivos de configuração sensíveis =====
+application-oracle.properties
+application-prod.properties
+application-production.properties
+*-secret.properties
+*.env
+.env
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
