@@ -9,4 +9,4 @@ public class SmartDisasterApplication {
     public static void main(String[] args) {
         SpringApplication.run(SmartDisasterApplication.class, args);
     }
-} 
+}

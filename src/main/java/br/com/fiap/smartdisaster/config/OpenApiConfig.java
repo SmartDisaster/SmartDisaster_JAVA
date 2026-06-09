@@ -7,8 +7,11 @@ import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.info.License;
 import io.swagger.v3.oas.models.security.SecurityRequirement;
+import io.swagger.v3.oas.models.servers.Server;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import java.util.List;
 
 @Configuration
 @SecurityScheme(
@@ -23,6 +26,10 @@ public class OpenApiConfig {
     @Bean
     public OpenAPI smartDisasterOpenAPI() {
         return new OpenAPI()
+                .servers(List.of(
+                        new Server().url("https://smartdisasterjava-production.up.railway.app").description("Produção"),
+                        new Server().url("http://localhost:8080").description("Local")
+                ))
                 .info(new Info()
                         .title("SmartDisaster API")
                         .description("API para gestão inteligente de abrigos, vítimas, voluntários, doações e sensores em situações de emergência.")
