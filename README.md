@@ -326,23 +326,3 @@ Configure as credenciais Oracle em `src/main/resources/application-oracle.proper
   "abrigoId": 1
 }
 ```
-
----
-
-## Critérios Atendidos
-
-| Critério | Implementação |
-|---|---|
-| API REST com Java + Spring Boot | Spring Boot 3.2.4, organização em camadas |
-| Verbos HTTP + Status Codes + HATEOAS | GET/POST/PUT/DELETE + 200/201/204/400/401/403/404/422 + EntityModel/PagedModel |
-| Injeção de dependência + Lombok + DevTools | `@RequiredArgsConstructor`, Lombok annotations, spring-boot-devtools |
-| Spring Data JPA + JpaRepository + CRUD completo | 7 repositories, CRUD em todos os módulos |
-| DTOs como Java Records + Spring Validation | Todos os `*Request` e `*Response` são records com `@NotBlank`, `@NotNull`, `@Valid` |
-| Tratamento de exceções padronizado | `GlobalExceptionHandler` com `@RestControllerAdvice` |
-| Herança | `Usuario` com `@Inheritance(SINGLE_TABLE)` + discriminator |
-| Chave composta | `MatchingId` com `@EmbeddedId` |
-| Embedded | `Endereco` com `@Embeddable` |
-| Spring Security + JWT | Filtro JWT stateless, roles ADMIN/VOLUNTARIO, BCrypt |
-| Swagger/OpenAPI | springdoc 2.3.0, `@Tag`, `@Operation`, `@SecurityScheme` |
-| CORS | `CorsConfig` com `UrlBasedCorsConfigurationSource` |
-| Deploy público | Railway — https://smartdisasterjava-production.up.railway.app |
