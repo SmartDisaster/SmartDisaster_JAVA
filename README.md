@@ -13,7 +13,6 @@ API REST para gestão inteligente de emergências — coordena abrigos, vítimas
 | **Vídeo de Apresentação (até 10 min)** | https://youtu.be/Kg750vQBo48 |
 | **Video Pitch (até 3 min)** | https://youtu.be/ItPEbWxzNkw |
 | **Testes Mobile** | https://youtu.be/pk97vHmkX98 |
-| **Repositório GitHub** | https://github.com/pedrovaz100/smartdisaster |
 
 ---
 
