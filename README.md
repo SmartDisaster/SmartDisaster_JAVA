@@ -124,20 +124,6 @@ A API utiliza **Spring Security 6 + JWT (stateless)**:
 - Senhas armazenadas com **BCrypt**
 - Token JWT com expiração de 24h
 
-### Permissões por Role
-
-| Operação | ADMIN | VOLUNTARIO |
-|---|:---:|:---:|
-| GET (qualquer endpoint) | ✅ | ✅ |
-| POST /vitimas | ✅ | ✅ |
-| POST /doacoes | ✅ | ✅ |
-| POST /abrigos | ✅ | ❌ |
-| POST /necessidades | ✅ | ❌ |
-| POST /sensor/leitura | ✅ | ❌ |
-| POST /matching/executar | ✅ | ❌ |
-| PUT (qualquer) | ✅ | ❌ |
-| DELETE (qualquer) | ✅ | ❌ |
-
 ---
 
 ## Endpoints da API
