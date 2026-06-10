@@ -326,3 +326,29 @@ Configure as credenciais Oracle em `src/main/resources/application-oracle.proper
   "abrigoId": 1
 }
 ```
+
+---
+
+### Permissões por Role
+
+| Operação | ADMIN | VOLUNTARIO |
+|---|:---:|:---:|
+| GET (qualquer endpoint) | ✅ | ✅ |
+| POST /vitimas | ✅ | ✅ |
+| POST /doacoes | ✅ | ✅ |
+| POST /abrigos | ✅ | ❌ |
+| POST /necessidades | ✅ | ❌ |
+| POST /sensor/leitura | ✅ | ❌ |
+| POST /matching/executar | ✅ | ❌ |
+| PUT (qualquer) | ✅ | ❌ |
+| DELETE (qualquer) | ✅ | ❌ |
+
+---
+
+### Usuários de teste (inseridos pelo DataLoader)
+
+| Perfil | E-mail | Senha | Permissões |
+|---|---|---|---|
+| Admin | admin@smartdisaster.com | `123456` | Acesso completo |
+| Voluntário | voluntario@smartdisaster.com | `123456` | Cadastrar doações e vítimas, visualizar |
+| Voluntária | ana@smartdisaster.com | `vol123` | Cadastrar doações e vítimas, visualizar |
